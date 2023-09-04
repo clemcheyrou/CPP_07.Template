@@ -6,14 +6,14 @@
 /*   By: ccheyrou <ccheyrou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 15:47:44 by clementinec       #+#    #+#             */
-/*   Updated: 2023/09/04 12:42:06 by ccheyrou         ###   ########.fr       */
+/*   Updated: 2023/08/29 18:18:59 by ccheyrou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 #include "Array.tpp"
 
-#define MAX_VAL 0
+#define MAX_VAL 750
 
 int main(int, char**)
 {
@@ -61,14 +61,6 @@ int main(int, char**)
     for (int i = 0; i < MAX_VAL; i++)
     {
         numbers[i] = rand();
-    }
-    try
-    {
-        std::cout << numbers[12] << std::endl;
-    }
-    catch(const std::exception& e)
-    {
-        std::cerr << e.what() << '\n';
     }
     delete [] mirror;//
     return 0;
