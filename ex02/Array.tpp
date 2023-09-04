@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.tpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: clementinecheyrou-lagreze <clementinech    +#+  +:+       +#+        */
+/*   By: ccheyrou <ccheyrou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 12:15:49 by clementinec       #+#    #+#             */
-/*   Updated: 2023/06/07 12:48:14 by clementinec      ###   ########.fr       */
+/*   Updated: 2023/08/29 18:17:53 by ccheyrou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ template <typename T>
 Array<T>::~Array(void)
 {
 	std::cout << "Destructor called" << std::endl;
-	delete []_elem;
+	delete[] _elem;
 	return;
 }
 

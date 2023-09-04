@@ -6,7 +6,7 @@
 /*   By: ccheyrou <ccheyrou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 18:09:41 by ccheyrou          #+#    #+#             */
-/*   Updated: 2023/05/25 21:35:47 by ccheyrou         ###   ########.fr       */
+/*   Updated: 2023/09/04 12:34:16 by ccheyrou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ int main()
 {
 	int tab[] = {1, 2, 3, 4};
 	
-	iter<int>(tab, 4 , print<int>);
+	iter<int>(tab, 4 , print<const int>);
 	return (0);
 }

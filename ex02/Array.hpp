@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: clementinecheyrou-lagreze <clementinech    +#+  +:+       +#+        */
+/*   By: ccheyrou <ccheyrou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 15:47:42 by clementinec       #+#    #+#             */
-/*   Updated: 2023/06/07 12:44:40 by clementinec      ###   ########.fr       */
+/*   Updated: 2023/08/29 18:04:09 by ccheyrou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define ARRAY_H
 
 #include <iostream>
+#include <cstddef>
+#include <cstdlib>
 
 template <typename T>
 class Array

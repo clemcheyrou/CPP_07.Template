@@ -6,7 +6,7 @@
 /*   By: ccheyrou <ccheyrou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 18:00:11 by ccheyrou          #+#    #+#             */
-/*   Updated: 2023/05/25 21:33:55 by ccheyrou         ###   ########.fr       */
+/*   Updated: 2023/09/04 12:35:25 by ccheyrou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include <iostream>
 
-template< typename T >
-void iter( T *tab, int size, void (*pf)(T&) )
+template< typename T, typename C >
+void iter(T *tab, int size, void (*pf)(C&))
 {
 	if (size > 0)
 	{
@@ -27,12 +27,12 @@ void iter( T *tab, int size, void (*pf)(T&) )
 		return;
 };
 
-template< typename T >
-void print( T & x)
-{
-	std::cout << x << std::endl;
-	return;
-};
+// template< typename T >
+// void print(T & x)
+// {
+// 	std::cout << x << std::endl;
+// 	return;
+// };
 
 
 #endif
